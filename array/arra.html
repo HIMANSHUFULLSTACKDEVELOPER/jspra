@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <button onclick="removedata()">Remove Name</button>
+    <div id="output"></div>
+    <script>
+        let data = [
+            {
+                id: 1,
+                name: "sanchit"
+            },
+
+            {
+                id: 2,
+                name: "pranay"
+            },
+
+            {
+                id: 3,
+                name: "yash"
+            }
+        ];
+
+        function getname() {
+            return prompt("Enter a name to remove:");
+        }
+
+
+        function removedata() {
+            let name = getname();
+            let index = data.findIndex(item => item.name === name);
+
+            if (index !== -1) {
+                data.splice(index, 1);
+
+            }
+            for (let a of data) {
+                alert(`${a.id} ${a.name}`);
+            }
+
+
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

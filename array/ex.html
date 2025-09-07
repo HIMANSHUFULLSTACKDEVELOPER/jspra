@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        // 1 print array 
+        // let array =[1,2,3,4,5,6,7,8,9,10]
+        // alert(array);
+
+
+        // 2 even number
+        // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // for (let i = 0; i < array.length - 1; i++) {
+        //     if (array[i] % 2 === 0) {
+        //         alert(array[i])
+        //     }
+        // }
+
+        // 3 odd number
+        // let array = [1,2,3,4,5,6,7,8,9,10];
+        // for(let a = 0; a < array.length -1;a++){
+        //     if (array[a] % 2 !== 0){
+        //         alert(array[a])
+        //     }
+        // }
+
+        // 4 sum of array
+        // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15];
+        // let sum = 0
+        // for (let i = 0; i < array.length - 1; i++) {
+        //     sum = sum + array[i]
+        // } alert(sum)
+
+        // 5 sum of avg
+        // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // let sum = 0
+        // for (let i = 0; i < array.length - 1; i++) {
+        //     sum += array[i]
+        // }
+        // let avg = sum / array.length
+        // alert(avg)
+
+
+        // 6 reverse the array
+        // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // for (let i = array.length - 1; i >= 0; i--) {
+        //     alert(array[i]);
+        // }
+
+
+        // 7 greater numbers
+        // let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+        // let max = array[0]
+        // let min = array[0]
+        // for (let i = 1; i < array.length; i++) {
+        //     if (array[i] > max) {
+        //         max = array[i]
+        //     } if (array[i] < min) {
+        //         min = array[i];
+        //     }
+        // };
+        // alert("Max" + max + " , Min " + min);
+
+        // 8 find array
+        // let array = ["ayush","himanshu","aman"]
+        // alert(array[1])
+
+        // 9 find  update number
+        //     let numbers = [10, 20, 30];
+        //     numbers[0] = 1000;
+        //   alert(numbers)
+
+        // 10
+        //  let numbers = [10, 20, 30];
+        //     number = numbers.length
+        //   alert(number)
+
+        // 11  pop shift
+        // let fruits = ["Apple", "Banana"];
+        // fruits.push("Mango");
+        // fruits.unshift("Orange");
+
+        // 12 slice
+        //     let arr = [10, 20, 30, 40, 50];
+        //    alert(arr.slice(2, 3));
+
+        // 13  join str
+        // let words = ["Hello", "World", "javascript"];
+        // alert(words.join(" "));
+
+        // 14 
+        // let arr = [10, 20, 30, 40];
+        // console.log(arr.indexOf(20)); 
+
+        // 15 sort reverse  
+        // let nums = [40, 10,50,15, 30, 20];
+        // nums.sort();
+        // nums.reverse();
+        // alert(nums.sort());
+        // alert(nums.reverse());
+
+        // 16 print array
+        // let fruit = ["apple", "orange", "banana"];
+        // for (let i = 0; i < fruit.length; i++) {
+        //     alert(fruit[i])
+        // }
+
+        // 17 
+        // let arr = [2,4,6,8,7]
+        // arr.splice(1,5)
+        // alert(arr)
+
+        // 
+        // let arr = [2, 4, 6, 8, 7]
+        // let a = arr.splice(1, 2)
+        // alert(a);
+
+        // splice
+        //     let arr = [2, 4, 6, 8, 7]
+        // arr.splice(2, 2, 66)
+        //     alert(arr)
+
+        //   let arr = [2, 4, 6, 8, 7]
+        //     let a = arr.slice(0, 3)
+        //     alert(a)
+
+
+        // 
+        let data = [
+            {
+                id: 1,
+                name: "sanchit"
+            },
+            {
+                id: 2,
+                name: "pranay"
+            },
+            {
+                id: 3,
+                name: "yash"
+            }
+        ];
+
+
+        for (let a of data) {
+            alert(JSON.stringify(data))
+        };
+        function getname() {
+            prompt("enter a name")
+            return getname
+        }
+        function removedata() {
+            let name = getname()
+            let isfound = true
+            for (let i = 0; i <= data.length; i++) {
+                data.splice(i, 1);
+                isfalse = false
+            }
+        }
+        if (isfound) {
+            alert("not found")
+        }
+
+        for (let a of data) {
+            alert(`${a.id} $ {a.name}`)
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

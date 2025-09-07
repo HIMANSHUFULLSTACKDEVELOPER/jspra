@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <button onclick="changeNumber()">Enter Names</button>
+    <p id="display"></p>
+
+    <script>
+        let array = [
+            [0, 0, 0, 0],
+            [0, 0, 0, 0],0
+            [0, 0, 0, 0],
+            [0, 0, 0, 0]
+        ];
+
+        let i = 0;
+        function changeNumber() {
+
+            if (input.length == 4) {
+               let input = prompt("enter a name")
+               let str = input.spilt("")
+               array[i] = str;
+               i++
+            }
+            document.getElementById("display").innerHTML = array;
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
